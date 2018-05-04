@@ -1,0 +1,88 @@
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+main{
+  width:100vw;
+  height:100vh;
+  
+  display:grid;
+  justify-content:center;
+  align-items:center;
+  
+  
+  background: white;
+  
+  /* lägg till photoshoppad bild */
+  
+}
+.first-button { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  background-color:teal;
+  color: white;
+  box-shadow: 5px 5px 25px #000;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 
+  all 1s;
+}
+.first-button__blurb {
+  opacity: 1;
+  transform: translateX(45px);
+  transition:
+  opacity 0.5s 2s,
+  transform 0.5s 0.5s;
+}
+.rect__blurb {
+  opacity: 0;
+  transform: translateX(500px);
+  transition: 
+  opacity 0.5s 1s,
+  transform 0.5s 1s;
+}
+.first-button:hover {
+  width: 350px;
+  height: 350px;
+  border-radius: 250px;
+  background-color:blueviolet;
+}
+.first-button_blurb {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+.rect__blurb {
+  opacity: 1;
+  transform: translateX(-100px);
+}
+
+.mainblock1 {
+  padding: 0px;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(10,1fr);
+}
+
+.header1 {
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: blue;
+}
+
+.body1 {
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 2/11;
+  background-color: orange;
+}
+
+
