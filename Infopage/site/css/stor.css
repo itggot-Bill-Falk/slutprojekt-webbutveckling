@@ -17,6 +17,7 @@ main{
   /* lägg till photoshoppad bild */
   
 }
+
 .first-button { 
   display: flex;
   justify-content: space-between;
@@ -32,6 +33,14 @@ main{
   transition: 
   all 1s;
 }
+
+.first-button:hover {
+  width: 350px;
+  height: 350px;
+  border-radius: 250px;
+  background-color:blueviolet;
+}
+
 .first-button__blurb {
   opacity: 1;
   transform: translateX(45px);
@@ -39,6 +48,7 @@ main{
   opacity 0.5s 2s,
   transform 0.5s 0.5s;
 }
+
 .rect__blurb {
   opacity: 0;
   transform: translateX(500px);
@@ -46,21 +56,25 @@ main{
   opacity 0.5s 1s,
   transform 0.5s 1s;
 }
-.first-button:hover {
-  width: 350px;
-  height: 350px;
-  border-radius: 250px;
-  background-color:blueviolet;
+
+.first-button__blurb:hover {
+  transition-delay: 0ms;
+  transform: translateX(500px);
+  width: 300px;
+  transition:
+  opacity 1s 1s,
+  transform 0.5s 1s;
 }
-.first-button_blurb {
+
+.toggleTextShit {  
   opacity: 0;
-  transform: translateX(-500px);
 }
+
 .rect__blurb {
   opacity: 1;
   transform: translateX(-100px);
 }
-
+§
 .mainblock1 {
   padding: 0px;
   margin: auto;

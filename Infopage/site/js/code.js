@@ -1,4 +1,4 @@
-function toggleMenu(){
-    var element = document.querySelector(".menu");
-    element.classList.toggle("show");
-}
+// function toggleText(){
+//     var element = document.querySelector(".first-button__blurb");
+//     element.classList.toggle("toggleTextShit");
+// }
