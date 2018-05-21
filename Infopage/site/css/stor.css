@@ -1,6 +1,5 @@
 body{
-  padding: 0px;
-  margin: 0px;
+  margin: 0px; 
 }
 
 main{
@@ -13,8 +12,8 @@ main{
   
   
   background: white;
-  
-  /* lägg till photoshoppad bild */
+  background: url(../img/HONEY-VILLAGE.png) 
+
   
 }
 
@@ -22,9 +21,9 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
-  height: 150px;
-  background-color:teal;
+  width: 200px;
+  height: 100px;
+  background-color:#57dd75;;
   color: white;
   box-shadow: 5px 5px 25px #000;
   overflow: hidden;
@@ -35,10 +34,10 @@ main{
 }
 
 .first-button:hover {
-  width: 350px;
-  height: 350px;
-  border-radius: 250px;
-  background-color:blueviolet;
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+  background-color:#50a0ed;
 }
 
 .first-button__blurb {
@@ -91,7 +90,7 @@ main{
   display: grid;
   grid-column: 1/4;
   grid-row: 1/2;
-  background-color: blue;
+  background-color: blueviolet;
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: repeat(3,1fr);
 }
@@ -102,14 +101,14 @@ main{
   grid-row: 2/11;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
-  background-color: orange;
+  background-color: white;
 }
 
 .sök {
   display: grid;
   grid-column: 2/5;
   grid-row: 2/3;
-  border-radius:8px;
+  border-radius:5px;
 
 }
 
@@ -121,15 +120,81 @@ main{
   color: white;
 }
 
+a{
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/4;
+  margin-left: 10px;
+}
+
+
 .info1 {
   display: grid;
   grid-row: 3/4;
   grid-column: 1/4;
   margin-left: 5px;
-  color: white
+  color: black;
 }
+
+
 
 img {
   display: grid;
-  grid-row: 2/3
+  grid-row: span 1;
+  grid-column: 1 / 4;
 }
+
+
+
+@media (min-width: 322px){
+  .mainblock1 {
+    width:100vw;
+    height:100vh;
+  }
+
+  .body1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr)
+  }
+
+  .sök{
+    border-radius: 3px;
+  }
+
+  .hamburgericon{
+    margin-left: 12vw;
+    font-size: 
+  }
+
+  img {
+    display: grid;
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+  info1{
+    font-size: 150%;
+  }
+  main{
+    background: url(../img/Bakgrundphotoshop.png)
+  }
+
+  .first-button{
+    background-color:#FF7A0D;
+    width: 300px;
+    height: 150px;
+  }
+
+  .first-button:hover{
+    background-color: blueviolet;
+    width: 350px;
+    height: 350px;
+    border-radius: 250px;
+  }
+  
+  
+}
+
+
+
+
