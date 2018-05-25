@@ -142,8 +142,7 @@ img {
 
 .picture{
   background: url(../img/bakverk.png);
-  width: 100vw;
-  height: 100vh;
+  
 }
 
 
@@ -226,19 +225,33 @@ img {
   .menu{
     display: grid;
     grid-column: span 1;
-    width: 300px;
-    height: 100vh;
+    width: 200px;
+    height: 0vh;
     position: absolute;
     right: 0px;
-    background:lightblue;
-    display: none;
+    background:rgba(184, 228, 244, 0,7);
+    visibility: invisible;
     z-index: 4;
+    transition: 0.25s;
+    overflow: none;
   }
 
   .show{
-    display: block;
+    visibility: invisible;
+    height: 300px;
+    transition: 0.25s;
+    
   }
   
+  .picture{
+    background: url(../img/bakverk.png);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .sida3block{
+
+  }
 
 
 }
