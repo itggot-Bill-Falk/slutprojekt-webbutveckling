@@ -1,7 +1,4 @@
-// function toggleText(){
-//     var element = document.querySelector(".first-button__blurb");
-//     element.classList.toggle("toggleTextShit");
-// }
+
 
 var width = window.innerWidth
 || document.documentElement.clientWidth

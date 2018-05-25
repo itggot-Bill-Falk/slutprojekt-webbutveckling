@@ -266,9 +266,10 @@ a {
     background: url(../img/bakverk.png);
   }
 
-  .sida3block{
-
+  audio{
+    display: none
   }
+
 
 
 }
